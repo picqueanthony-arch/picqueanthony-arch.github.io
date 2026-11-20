@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr" data-root="">
+<head>
+<meta charset="utf-8">
+<script src="static/app.js?v=24a1b180"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Télécharger — Dante OS</title>
+<meta name="description" content="Ton écran d&#x27;accueil devient un univers">
+<meta name="theme-color" content="#07080c">
+<link rel="canonical" href="https://picqueanthony-arch.github.io/telecharger.html">
+<link rel="alternate" hreflang="fr" href="https://picqueanthony-arch.github.io/telecharger.html">
+<link rel="alternate" hreflang="en" href="https://picqueanthony-arch.github.io/en/telecharger.html">
+<link rel="alternate" hreflang="x-default" href="https://picqueanthony-arch.github.io/telecharger.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dante OS">
+<meta property="og:title" content="Télécharger — Dante OS">
+<meta property="og:description" content="Ton écran d&#x27;accueil devient un univers">
+<meta property="og:url" content="https://picqueanthony-arch.github.io/telecharger.html">
+<meta property="og:image" content="https://picqueanthony-arch.github.io/static/img/og-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="static/img/favicon-192.png">
+<link rel="apple-touch-icon" href="static/img/apple-touch-icon.png">
+<link rel="manifest" href="static/manifest.webmanifest">
+<link rel="stylesheet" href="static/style.css?v=24a1b180">
+
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<canvas id="stars" aria-hidden="true"></canvas>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="static/img/logo-64.webp" alt="" width="30" height="30">Dante OS</a>
+<button class="menu-btn" aria-expanded="false">Menu</button>
+<nav class="nav"><a href="encyclopedie/">Encyclopédie</a><a href="telecharger.html" class=on data-web>Télécharger</a><a href="pro.html">Dante Pro</a><a href="transparence.html">Transparence</a><a href="galerie.html">Galerie</a><a href="univers.html">Univers</a><a href="nouveautes.html">Nouveautés</a><a class="lang" href="en/telecharger.html">EN</a></nav>
+</div></header>
+<main id="main">
+<div class="wrap page">
+<span class="tag"><b>Dante</b> / Télécharger</span>
+<h1 style="margin-top:14px">Dante OS 5.0.0 Full</h1>
+<p class="intro" data-app style="color:var(--accent)">Tu l'as déjà 🙂 Cette page sert à le faire découvrir : envoie le lien à quelqu'un.</p>
+<p class="intro" style="color:var(--ink-2);max-width:40em">Tout Dante OS : le launcher, les modules, Dante FX, Dante IA, et Dante Core pour les téléphones rootés. Sans root, tout marche sauf Dante Core et les modules root.</p>
+<div class="dl-grid">
+ <div class="panel">
+  <a class="btn main" href="https://github.com/picqueanthony-arch/Dante-OS-Full/releases/download/v5.0.0/Dante-OS-5.0.0-Full.apk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>Télécharger Dante-OS-5.0.0-Full.apk</a>
+  <dl class="kv" style="margin-top:18px">
+   <dt>Version</dt><dd>5.0.0 · <a href="https://github.com/picqueanthony-arch/Dante-OS-Full/releases/tag/v5.0.0">page de la version</a></dd>
+   <dt>Taille</dt><dd>53 Mo</dd>
+   <dt>Android</dt><dd>10 ou plus, téléphone ARM 64 bits</dd>
+   <dt>Root</dt><dd>facultatif (Magisk ou KernelSU) : pour Dante Core et les modules root</dd>
+   <dt>Testé sur</dt><dd>OnePlus 13 (Android 16), Pixel, Fold</dd>
+  </dl>
+ </div>
+ <div>
+  <h3>Installer</h3>
+  <ol>
+   <li>Télécharge le fichier APK ci-contre.</li>
+   <li>Ouvre-le et autorise l'installation depuis cette source quand Android le demande.</li>
+   <li>Lance Dante OS et choisis-le comme écran d'accueil.</li>
+  </ol>
+  <p style="color:var(--ink-3);font-size:14px">Mise à jour : installe la nouvelle version par-dessus, tes réglages restent. Avant un gros changement : Bureau ▸ Personnaliser ▸ Sauvegarde ▸ Exporter.</p>
+ </div>
+</div>
+<h2>Vérifier que le fichier est le vrai</h2>
+<p>Empreinte SHA-256 de l'APK :<br><code>9349e459f603bd8cface2972fd0a696c73f0215c180840c2a1c1cf3fec49fe74</code></p>
+<pre><code>sha256sum Dante-OS-5.0.0-Full.apk</code></pre>
+<p>Certificat de signature (le même pour toutes les versions) :<br><code>78:FE:D6:BF:09:A3:EF:4D:CD:B7:C2:5F:F8:8E:E5:DA:EF:36:85:71:FA:AE:72:88:BE:C4:4C:4E:6C:1B:82:D7</code></p>
+<pre><code>apksigner verify --print-certs Dante-OS-5.0.0-Full.apk</code></pre>
+<p style="color:var(--ink-2)">Une copie re-signée par quelqu’un d’autre refuse les clés Dante Pro, et Android refuse de l’installer par-dessus la vraie. Tout le détail est dans <a href="transparence.html">Transparence</a>.</p>
+</div>
+</main>
+<footer class="foot"><div class="wrap">
+<p style="max-width:40em;margin:0">Dante OS est imaginé et construit par Anthony, en France. Pas de publicité, pas de statistiques, pas de compte. Ce site non plus : aucun cookie, aucun traqueur.</p>
+<nav><a href="https://discord.gg/XcstyCwGuP">Discord</a><a href="https://github.com/picqueanthony-arch/Dante-OS-Full">GitHub</a><a href="https://picqueanthony-arch.github.io/dante-os-confidentialite/full.html">Confidentialité</a><a href="mailto:danteantpi@proton.me">danteantpi@proton.me</a></nav>
+</div></footer>
+<script src="static/site.js?v=24a1b180" defer></script>
+</body>
+</html>

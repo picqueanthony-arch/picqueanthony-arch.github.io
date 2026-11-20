@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://picqueanthony-arch.github.io/sitemap.xml

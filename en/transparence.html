@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-root="">
+<head>
+<meta charset="utf-8">
+<script src="../static/app.js?v=24a1b180"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transparency — Dante OS</title>
+<meta name="description" content="Your home screen becomes a universe">
+<meta name="theme-color" content="#07080c">
+<link rel="canonical" href="https://picqueanthony-arch.github.io/en/transparence.html">
+<link rel="alternate" hreflang="fr" href="https://picqueanthony-arch.github.io/transparence.html">
+<link rel="alternate" hreflang="en" href="https://picqueanthony-arch.github.io/en/transparence.html">
+<link rel="alternate" hreflang="x-default" href="https://picqueanthony-arch.github.io/transparence.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dante OS">
+<meta property="og:title" content="Transparency — Dante OS">
+<meta property="og:description" content="Your home screen becomes a universe">
+<meta property="og:url" content="https://picqueanthony-arch.github.io/en/transparence.html">
+<meta property="og:image" content="https://picqueanthony-arch.github.io/static/img/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../static/img/favicon-192.png">
+<link rel="apple-touch-icon" href="../static/img/apple-touch-icon.png">
+<link rel="manifest" href="../static/manifest.webmanifest">
+<link rel="stylesheet" href="../static/style.css?v=24a1b180">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="stars" aria-hidden="true"></canvas>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="../static/img/logo-64.webp" alt="" width="30" height="30">Dante OS</a>
+<button class="menu-btn" aria-expanded="false">Menu</button>
+<nav class="nav"><a href="encyclopedie/">Encyclopedia</a><a href="telecharger.html" data-web>Download</a><a href="pro.html">Dante Pro</a><a href="transparence.html" class=on>Transparency</a><a href="galerie.html">Gallery</a><a href="univers.html">Universe</a><a href="nouveautes.html">What&#x27;s new</a><a class="lang" href="../transparence.html">FR</a></nav>
+</div></header>
+<main id="main">
+<div class="wrap page"><div class="narrow">
+<span class="tag"><b>Dante</b> / Transparency</span>
+<h1 style="margin-top:14px">Why trust Dante OS</h1>
+<p>Dante OS is not open source. Here is why, what the app does not do, and how to <strong>check for yourself</strong> what it does, without taking anyone&#x27;s word for it.</p>
+<h3>Why the code is not published</h3>
+<ul><li>Dante OS is the work of <strong>one person</strong>, over the past year. <strong>Dante Pro</strong> (€5.99, one-time) keeps it alive.</li><li>Publishing the code would let anyone <strong>re-publish modified copies</strong> under another name (with ads, or worse), and nobody could tell which one is real.</li><li>The app touches the system when you enable root: I prefer to stay in control of what gets distributed. The in-app Guide says so too, in &quot;Total transparency&quot;.</li></ul>
+<h3>What Dante OS does not do</h3>
+<ul><li><strong>No ads</strong>, <strong>no analytics</strong>, <strong>no crash reports</strong>.</li><li><strong>No account required.</strong></li><li>It does <strong>not</strong> ask for location, SMS or the call log.</li><li><strong>No root command without your consent.</strong> Without root, none is ever run.</li><li>It does <strong>not</strong> modify system partitions, replaces no Android file and installs nothing into the system.</li><li>Android&#x27;s automatic backup is disabled for the app: your settings don&#x27;t go to a cloud.</li></ul>
+<h3>Almost everything works without root</h3>
+<p>The launcher, the dock, the Hive, Dante FX, Dante Engine, Dante IA, Gateway, news, SSH, Files, Home… work <strong>without root</strong>. Root only opens the firewall, the DNS filter, XRay, CPU, battery and Dante Core.</p>
+<h3>What goes to the Internet</h3>
+<p>Only what you use or set up yourself:</p>
+<ul><li><strong>Your sources</strong>: the feeds, APIs and servers you add receive the requests you send them.</li><li><strong>Dante IA</strong>: the model is downloaded once from Hugging Face, when you ask for it. Then it runs <strong>on the phone</strong>: your conversations never leave it. If you keep its Internet tools on, a search goes to DuckDuckGo, Wikipedia or Open-Meteo, without any identifier.</li><li><strong>DNS filter</strong> (root): public blocklists are downloaded from their sites.</li><li><strong>Theme store</strong> (optional): browsing and installing needs no account. To publish, rate or report, you sign in with Google.</li><li><strong>Dante Pro key</strong>: on activation, the key and a <strong>fingerprint of the phone</strong> (never its Android ID) are sent once to the Dante Pro server (Supabase, in Europe), so a key works on 3 phones at most. After that it is checked <strong>offline</strong>.</li><li><strong>Dante Core</strong> (root): on request, the official Debian image (images.linuxcontainers.org, checksum verified), Kali (kali.download), VS Code (GitHub) and packages from the official repositories. Claude is only used with <strong>your own</strong> Anthropic key, if you choose it.</li></ul>
+<p>Full details are in the <a href="https://picqueanthony-arch.github.io/dante-os-confidentialite/full.html">privacy policy</a>.</p>
+<h3>Check for yourself</h3>
+<ol><li><strong>The file</strong>: its SHA-256 must match the one published with each version (<code>.sha256</code> file in <a href="https://github.com/picqueanthony-arch/Dante-OS-Full/releases">Releases</a>). For 5.0.0: <code>9349e459f603bd8cface2972fd0a696c73f0215c180840c2a1c1cf3fec49fe74</code><pre><code>sha256sum Dante-OS-5.0.0-Full.apk</code></pre></li><li><strong>The signature</strong>: every version is signed with the same certificate. Android refuses an update signed by someone else. <code>78:FE:D6:BF:09:A3:EF:4D:CD:B7:C2:5F:F8:8E:E5:DA:EF:36:85:71:FA:AE:72:88:BE:C4:4C:4E:6C:1B:82:D7</code><pre><code>apksigner verify --print-certs Dante-OS-5.0.0-Full.apk</code></pre></li><li><strong>Antivirus</strong>: drop the APK on <a href="https://www.virustotal.com">VirusTotal</a>, or search its SHA-256.</li><li><strong>Permissions</strong>: Android Settings ▸ Apps ▸ Dante OS ▸ Permissions. The in-app Guide explains each one.</li><li><strong>Traffic</strong>: a tool like <a href="https://github.com/emanuele-f/PCAPdroid">PCAPdroid</a> (no root) shows every connection of every app.</li><li><strong>Root rules</strong>: with the firewall or DNS filter on, <code>iptables -S | grep DANTE</code> and <code>iptables -t nat -S | grep DANTE</code> show the only chains Dante adds (DANTE_FW, DANTE_DNS…). They are removed when you turn them off.</li><li><strong>The in-app Guide</strong>: its &quot;Total transparency&quot; section lists what Dante reads, changes and sends.</li></ol>
+<h3>A question?</h3>
+<p>Ask it on <a href="https://discord.gg/XcstyCwGuP">Discord</a>, or write to danteantpi@proton.me.</p>
+<h2>In the encyclopedia</h2>
+<div class="sec-list"><a href="encyclopedie/t_modify.html"><span><strong>What Dante reads and changes on your phone</strong><span class="s">Launcher-only mode on one side, full mode on the other.</span></span><span></span></a><a href="encyclopedie/t_perms.html"><span><strong>Permissions, one by one</strong><span class="s">Why each one is requested.</span></span><span></span></a><a href="encyclopedie/t_net.html"><span><strong>Internet connections</strong><span class="s">The complete list of what Dante connects to.</span></span><span></span></a><a href="encyclopedie/t_store.html"><span><strong>What is stored, and where</strong><span class="s">In the app&#x27;s private space, which other apps cannot read.</span></span><span></span></a><a href="encyclopedie/t_limits.html"><span><strong>Limits and honesty</strong><span class="s">What Dante OS is not.</span></span><span></span></a><a href="encyclopedie/t_licenses.html"><span><strong>Third-party libraries and licenses</strong><span class="s">Dante OS is built on free software.</span></span><span></span></a><a href="encyclopedie/t_report.html"><span><strong>Report a problem or an omission</strong><span class="s">How to help.</span></span><span></span></a></div>
+</div></div>
+</main>
+<footer class="foot"><div class="wrap">
+<p style="max-width:40em;margin:0">Dante OS is imagined and built by Anthony, in France. No ads, no analytics, no account. Same for this site: no cookies, no trackers.</p>
+<nav><a href="https://discord.gg/XcstyCwGuP">Discord</a><a href="https://github.com/picqueanthony-arch/Dante-OS-Full">GitHub</a><a href="https://picqueanthony-arch.github.io/dante-os-confidentialite/full.html">Privacy</a><a href="mailto:danteantpi@proton.me">danteantpi@proton.me</a></nav>
+</div></footer>
+<script src="../static/site.js?v=24a1b180" defer></script>
+</body>
+</html>
