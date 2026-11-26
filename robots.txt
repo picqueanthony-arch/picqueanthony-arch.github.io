@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dante-os.fr/sitemap.xml
+Sitemap: https://picqueanthony-arch.github.io/sitemap.xml
